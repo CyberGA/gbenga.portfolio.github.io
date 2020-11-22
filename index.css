@@ -305,15 +305,10 @@ body {
   position: relative;
 }
 
-.main .resume__body .education .edu-1 p:first-child,
-.main .resume__body .education .edu-2 p:first-child {
-  display: inline;
-}
-
-.main .resume__body .education .edu-1 span,
-.main .resume__body .education .edu-2 span {
-  position: absolute;
-  right: 0;
+.main .resume__body .education .edu-1 .date,
+.main .resume__body .education .edu-2 .date {
+  text-align: right;
+  font-family: "Righteous", cursive;
 }
 
 .main .resume__body .workExperience {
@@ -327,6 +322,7 @@ body {
 .main .resume__body .workExperience span {
   position: absolute;
   right: 0;
+  font-family: "Righteous", cursive;
 }
 
 .main .resume__body .workExperience ul {
@@ -359,9 +355,13 @@ body {
   .main .resume__body p {
     text-align: justify;
   }
+  .main .resume__body span, .main .resume__body .date {
+    font-size: 12px;
+    line-height: 1;
+    text-decoration: underline;
+  }
   .main .resume__body span {
-    font-size: 10px;
-    line-height: 2;
+    line-height: 2.2;
   }
 }
 

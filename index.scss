@@ -290,13 +290,13 @@ body {
           padding-top: 10px;
           position: relative;
 
-          p:first-child {
-            display: inline;
-          }
+          // p:first-child {
+          //   display: inline;
+          // }
 
-          span {
-            position: absolute;
-            right: 0;
+          .date {
+            text-align: right;
+            font-family: "Righteous", cursive;
           }
         }
       }
@@ -310,6 +310,7 @@ body {
         span {
           position: absolute;
           right: 0;
+          font-family: "Righteous", cursive;
         }
 
         ul {
@@ -341,9 +342,13 @@ body {
         p {
           text-align: justify;
         }
+        span, .date {
+          font-size: 12px;
+          line-height: 1;
+          text-decoration: underline;
+        }
         span {
-          font-size: 10px;
-          line-height: 2;
+          line-height: 2.2;
         }
       }
     }
