@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav container to the left -->
+    <nav class="nav">
+      <div class="nav__links">
+        <a href="#profile__sec" class="nav__link active">Profile</a>
+        <a href="#resume__sec" class="nav__link">Resume</a>
+        <a href="#portfolio__sec" class="nav__link">Portfolio</a>
+      </div>
+    </nav>
+    <div class="hamburger-container">
+      <i class="material-icons hamburger">menu</i>
+      <i class="material-icons close">close</i>
+    </div>
+    <!-- main content to the right -->
+    <main class="main">
+      <section class="profile" id="profile__sec">
+        <div class="profile__pic">
+          <img src="./image/img_2.jpeg" alt="Gbenga" class="my-img" />
+        </div>
+        <h1 class="profile__name">Gbenga Joshua Etomu</h1>
+        <h3 class="profile__title">Software Developer</h3>
+      </section>
+      <section class="resume" id="resume__sec">
+        <div class="resume__header">
+          <h1 class="profileName">Gbenga Joshua Etomu</h1>
+          <div class="address">
+            <p>
+              11, Ibadan Street by Borno way, Ebute-Metta, Yaba, Lagos State
+            </p>
+            <p>
+              <b>Email:</b>
+              <a href="mailto:oluwa.gbemiga@outlook.com"
+                >oluwa.gbemiga@outlook.com</a
+              >
+            </p>
+            <p><b>Phone:</b> +234(0)9031741560</p>
+            <p>
+              <b>LinkedIn:</b>
+              <a href="https://www.linkedin.com/in/gbenga-etomu-65218b112/"
+                >https://www.linkedin.com/in/gbenga-etomu-65218b112/</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="resume__body">
+          <div class="introProfile">
+            <h4>PROFILE</h4>
+            <hr />
+            <p>
+              Gbenga is a dedicated, self-learnt, adaptive and innovative
+              Software Developer, I totally enjoy the adoption of new
+              technologies and I am always willing to take up new challenges and
+              opportunities. I’m able to work under pressure effectively and
+              also, I am an energetic person who is great a time management.
+              With experience in the software development, I work very hard to
+              bring out the best design for any project.
+            </p>
+          </div>
+          <div class="techSkills">
+            <h4>TECHNICAL SKILL</h4>
+            <hr />
+            <ul>
+              <li><b>Languages:</b> C#, JavaScript, HTML5, CSS</li>
+              <li><b>Database:</b> Firebase, MongoDB</li>
+              <li>
+                <b>Tools:</b> Microsoft Visual Studio, Visual Studio Code, Git,
+                Figma, Github
+              </li>
+              <li><b>Framework:</b> ASP.Net Core/MVC, Bootstrap</li>
+              <li><b>Libraries:</b> React, Sass, BEM, JQuery</li>
+            </ul>
+          </div>
+          <div class="education">
+            <h4>EDUCATION</h4>
+            <hr />
+            <div class="edu-1">
+              <p><b>University of Benin, Benin City, Nigeria</b></p>
+              <span>Oct. 2018 till date</span>
+              <p>B.Eng. Computer Engineering</p>
+            </div>
+            <div class="edu-2">
+              <p><b>Institute of Continuing Education, Oleh</b></p>
+              <span>Sept. 2011 - May 2017</span>
+              <p>SSCE</p>
+            </div>
+          </div>
+          <div class="workExperience">
+            <h4>WORK EXPERIENCE</h4>
+            <p>Freelance</p>
+            <p class="workExperience__role"><b>Frontend Development</b></p>
+            <span>Aug. 2017 till date</span>
+            <hr />
+            <ul>
+              <li>
+                The development of frontend services to communicate with backend
+                services, integration and implementation of API with frontend
+                services, collaborating with backend engineers.
+              </li>
+              <li>
+                UX design, wire-frames design with figma, collaborating with UX
+                team
+              </li>
+              <li>
+                Tutoring and mentoring students. Designed the netflix web app
+              </li>
+            </ul>
+          </div>
+          <div class="softSkills">
+            <h4>SOFT SKILLS</h4>
+            <hr />
+            <ul>
+              <li>Team collaboration and leadership</li>
+              <li>
+                Excellent people skills with good communication skills (written
+                & verbal)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="porfolio" id="portfolio__sec">
+        <div class="portfolio--container">
+          <div class="netflix">
+            <a href="https://netflix-clone-398b6.web.app/"><img src="./image/netflix.png" alt="netflix"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript -->
+    <script>
+      window.onresize = () => location.reload();
+
+      // $(document).ready(() => {
+      //   // console.log("jQuery ready");
+      //   $(".nav__link").click(function() {
+      //     $(this).addClass("active").siblings().removeClass("active");
+      //   });
+      // });
+
+      // const navs = document.querySelectorAll(".nav__link");
+
+      // navs.forEach((nav) => {
+      //   nav.addEventListener("click", () => {
+      //     navs.forEach((n) => n.classList.remove("active"));
+      //     this.classList.add("active");
+      //   });
+      // });
+
+      
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // console.log("DOM loaded");
+
+        const hamburger = document.querySelector(".hamburger");
+        const closeBtn = document.querySelector(".close");
+        const navSection = document.querySelector(".nav");
+
+        const mobileScreen = window.matchMedia("(max-width: 768px)");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            // console.log(entries[0].intersectionRatio);
+            document
+              .querySelector(".hamburger-container .material-icons")
+              .classList.toggle(
+                "matIcon-darken",
+                entries[0].intersectionRatio < 0.9
+              );
+          },
+          {
+            threshold: 0.9,
+          }
+        );
+        observer.observe(document.querySelector(".hamburger-container"));
+
+        if (mobileScreen.matches) {
+          // console.log("matches");
+
+          hamburger.addEventListener("click", () => {
+            navSection.style.display = "block";
+            hamburger.style.display = "none";
+            closeBtn.style.display = "inline-block";
+          });
+
+          closeBtn.addEventListener("click", () => {
+            navSection.style.display = "none";
+            closeBtn.style.display = "none";
+            hamburger.style.display = "inline-block";
+          });
+        }
+      });
+
+      // window.onload = function () {
+      //   console.log("loaded");
+      // };
+    </script>
+  </body>
+</html>
