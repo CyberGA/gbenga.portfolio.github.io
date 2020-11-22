@@ -392,11 +392,11 @@ body {
           object-fit: contain;
           height: 80px;
           margin-top: 50px;
+          transition: box-shadow 800ms, background 750ms;
 
           &:hover {
             background: #00957a31;
             box-shadow: 0 -50px 0 0 #00957a31, 0 70px 0 0 #00957a31;
-            transition: box-shadow 800ms, background 750ms;
           }
         }
       }

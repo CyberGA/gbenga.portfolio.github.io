@@ -409,16 +409,16 @@ body {
      object-fit: contain;
   height: 80px;
   margin-top: 50px;
+  -webkit-transition: background 750ms, -webkit-box-shadow 800ms;
+  transition: background 750ms, -webkit-box-shadow 800ms;
+  transition: box-shadow 800ms, background 750ms;
+  transition: box-shadow 800ms, background 750ms, -webkit-box-shadow 800ms;
 }
 
 .main .portfolio .portfolio--container .netflix img:hover {
   background: #00957a31;
   -webkit-box-shadow: 0 -50px 0 0 #00957a31, 0 70px 0 0 #00957a31;
           box-shadow: 0 -50px 0 0 #00957a31, 0 70px 0 0 #00957a31;
-  -webkit-transition: background 750ms, -webkit-box-shadow 800ms;
-  transition: background 750ms, -webkit-box-shadow 800ms;
-  transition: box-shadow 800ms, background 750ms;
-  transition: box-shadow 800ms, background 750ms, -webkit-box-shadow 800ms;
 }
 
 @media screen and (max-width: 768px) {
