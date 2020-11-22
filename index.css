@@ -367,7 +367,7 @@ body {
   }
 }
 
-.main .porfolio {
+.main .portfolio {
   min-height: 100%;
   background: -webkit-gradient(linear, right bottom, left top, from(#009579), to(#0affd2));
   background: linear-gradient(to top left, #009579, #0affd2);
@@ -375,11 +375,11 @@ body {
   overflow-y: scroll;
 }
 
-.main .porfolio::-webkit-scrollbar {
+.main .portfolio::-webkit-scrollbar {
   display: none;
 }
 
-.main .porfolio .portfolio--container {
+.main .portfolio .portfolio--container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +393,7 @@ body {
       flex-wrap: wrap;
 }
 
-.main .porfolio .portfolio--container .netflix {
+.main .portfolio .portfolio--container .netflix {
   max-width: 200px;
   min-width: 200px;
   height: 200px;
@@ -403,7 +403,7 @@ body {
   position: relative;
 }
 
-.main .porfolio .portfolio--container .netflix img {
+.main .portfolio .portfolio--container .netflix img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -411,7 +411,7 @@ body {
   margin-top: 50px;
 }
 
-.main .porfolio .portfolio--container .netflix img:hover {
+.main .portfolio .portfolio--container .netflix img:hover {
   background: #00957a31;
   -webkit-box-shadow: 0 -50px 0 0 #00957a31, 0 70px 0 0 #00957a31;
           box-shadow: 0 -50px 0 0 #00957a31, 0 70px 0 0 #00957a31;
