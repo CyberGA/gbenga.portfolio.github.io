@@ -297,6 +297,7 @@ body {
           .date {
             text-align: right;
             font-family: "Righteous", cursive;
+            text-decoration: underline;
           }
         }
       }
@@ -311,6 +312,7 @@ body {
           position: absolute;
           right: 0;
           font-family: "Righteous", cursive;
+          text-decoration: underline;
         }
 
         ul {
@@ -342,10 +344,10 @@ body {
         p {
           text-align: justify;
         }
-        span, .date {
+        span,
+        .date {
           font-size: 12px;
           line-height: 1;
-          text-decoration: underline;
         }
         span {
           line-height: 2.2;
